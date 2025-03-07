@@ -1,0 +1,4 @@
+Flask
+requests
+youtube-transcript-api
+deep-translator

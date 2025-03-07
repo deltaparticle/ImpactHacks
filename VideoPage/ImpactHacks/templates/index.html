@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Study Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="hero-section">
+      <h1>YouTube Study Tool</h1>
+      <div class="search-container">
+        <div class="search-wrapper">
+          <input type="text" id="query" name="query" placeholder="What do you want to learn?">
+          <button id="search-btn" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="content-section">
+      <!-- Video section -->
+      <div class="video-section">
+        <h2 id="video-title">Video Content</h2>
+        <div id="video-container">
+          <p class="placeholder">Search for a video to start learning...</p>
+        </div>
+       
+        <div class="controls-wrapper">
+          <div id="transcript-controls" class="control-group" style="display:none;">
+            <select id="language-selector">
+              <option value="as">Assamese</option>
+              <option value="mni">Meiteilon (Manipuri)</option>
+              <option value="lus">Mizo</option>
+            </select>
+            <button id="transcript-btn">Generate Transcript</button>
+          </div>
+         
+          <div id="subtitle-controls" class="control-group" style="display:none;">
+            <button id="download-srt">Download SRT</button>
+            <button id="overlay-subtitles">Overlay Subtitles</button>
+            <button id="summarize-btn">Generate Summary</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summarizer section - full width -->
+      <div class="tool-card" id="summary-section">
+        <h2>📋 Summary</h2>
+        <div class="summary-container">
+          <div id="summary" class="placeholder">Summary will appear here...</div>
+        </div>
+        <div class="summary-controls" style="display:none;">
+          <select id="summary-language-selector">
+            <option value="en">English</option>
+            <option value="as">Assamese</option>
+            <option value="mni">Meiteilon (Manipuri)</option>
+            <option value="lus">Mizo</option>
+          </select>
+          <button id="translate-summary-btn">Translate Summary</button>
+          <button id="download-summary-btn">Download Summary</button>
+        </div>
+      </div>
+      
+      <!-- Transcript section - full width -->
+      <div class="tool-card" id="transcript-section">
+        <h2>📜 Transcript</h2>
+        <div class="transcript-container">
+          <pre id="transcript" class="placeholder">Transcript will appear here...</pre>
+        </div>
+      </div>
+     
+      <!-- Notes section - full width -->
+      <div class="tool-card" id="notes-section">
+        <h2>📝 Study Notes</h2>
+        <textarea id="notes" placeholder="Write your notes here..."></textarea>
+        <button id="download-notes">Download Notes</button>
+      </div>
+     
+      <!-- Quote section - full width -->
+      <div class="tool-card" id="quote-section">
+        <h2>💡 Today's Inspiration</h2>
+        <p id="motivation-quote"></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+</html>

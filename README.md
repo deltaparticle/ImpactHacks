@@ -71,12 +71,15 @@ This platform aims to revolutionize online learning by:
 6. Interact with the AI assistant for additional help
 7. Stay motivated with inspirational quotes
 
-## 🔑 API Keys Required
+## API Keys Required
 
 - YouTube Data API
 - Groq API (for LLM integration)
 
+## Link for landing page on HuggingFace Spaces
+https://huggingface.co/spaces/delta-praticle/ImpactHacks
 
-## 📄 License
+
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
